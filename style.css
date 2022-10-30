@@ -17,7 +17,7 @@
 }
 
 body {
-    width: 100vh;
+    width: 600px
 }
 
 .header {
@@ -95,6 +95,7 @@ main .habilidades {
 }
 
 main .habilidades h1 {
+    width: 383px;
     font-weight: 500;
     font-size: 52px;
     line-height: 28px;
@@ -147,6 +148,7 @@ main .experiencia .texto{
 }
 
 main .experiencia .texto h1 {
+    width: 383px;
     font-weight: 700;
     font-size: 42px;
     line-height: 28px;
