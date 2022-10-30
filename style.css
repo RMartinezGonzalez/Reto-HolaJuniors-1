@@ -1,0 +1,253 @@
+:root {
+    --primary:#1E0E62;
+    --secondary:#15143966;
+    --tertiary:#482BE7;
+    --white:#FFF;
+    --white2:#F1F1F1;
+    --gray-border:#EBEAED;
+    --gray-logo:#9999a7;
+    --aqua-button:#25DAC5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100vh;
+}
+
+.header {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px 7%; */
+    margin: 0 30px;
+    background: var(--white);
+    height: 90px;
+}
+
+.header .logo {
+    width: 190px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.29;
+    color: var(--primary);
+}
+
+.header .email {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--gray-border);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background: var(--white);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+main .presentacion {
+    background: var(--white2);
+    padding: 48px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main .presentacion h1 {
+    width: 422px;
+    height: 169px;
+    font-weight: 700px;
+    font-size: 43px;
+    line-height: 60px;
+    color: var(--primary);
+}
+
+main .presentacion p {
+    width: 369px;
+    height: 153px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--secondary);
+}
+
+main .presentacion img {
+    width: 359px;
+    height: 236px;
+    border-radius: 10px;
+}
+
+main .habilidades {
+    background: var(--white2);
+    padding: 48px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main .habilidades h1 {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 28px;
+    color: var(--primary);
+}
+
+main .habilidades p {
+    width: 458px;
+    height: 153px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--secondary);
+    margin-bottom: 13px;
+}
+
+main .habilidades .atributo h2 {
+    width: 215px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--primary);
+    margin-bottom: 21px;
+}
+
+main .habilidades .atributo p {
+    width: 283px;
+    height: 78px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary);
+    margin-bottom: 79px;
+}
+
+main .experiencia {
+    margin-bottom: 80px;
+    background: var(--white);
+}
+
+main .experiencia .texto{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 87px 0;
+}
+
+main .experiencia .texto h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 28px;
+    color: var(--primary);
+}
+
+main .experiencia .texto p {
+    width: 458px;
+    height: 154px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--secondary);
+}
+
+main .experiencia .texto .contacto {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--aqua-button);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--white);
+    border-radius: 100px;
+}
+
+main .experiencia .trabajo.dos,
+main .experiencia .trabajo.cuatro,
+main .experiencia .trabajo.cinco,
+main .experiencia .trabajo.seis {
+    display: none;
+}
+
+main .experiencia .trabajo {
+    text-align: start;
+    padding: 0 32px;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+main .experiencia .trabajo img {
+    height: 255px;
+    width: 509px;
+    border-radius: 10px;
+    margin-bottom: 21px;
+}
+
+main .experiencia .trabajo h2 {
+    width: 509px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+main .experiencia .trabajo p {
+    width: 505px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary);
+}
+
+main .informacion {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white2);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .informacion h3 {
+    width: 277px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 40px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: var(--primary);
+}
+
+main .informacion h3 a {
+    color: var(--tertiary);
+}
+
+main .informacion .icons {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .informacion .icons img {
+    width: 27px;
+}
