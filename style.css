@@ -9,10 +9,6 @@
     --aqua-button:#25DAC5;
 }
 
-body {
-    width: 100vw;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -20,12 +16,17 @@ body {
     text-decoration: none;
 }
 
+body {
+    width: 600px
+}
+
 .header {
     font-family: 'DM Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    /* margin: 30px 7%; */
+    margin: 0 30px;
     background: var(--white);
     height: 90px;
 }
@@ -59,11 +60,13 @@ body {
 
 main .presentacion {
     background: var(--white2);
-    padding-left: 48px;
+    padding: 48px;
     font-family: 'DM Sans', sans-serif;
 }
 
 main .presentacion h1 {
+    width: 422px;
+    height: 169px;
     font-weight: 700px;
     font-size: 43px;
     line-height: 60px;
@@ -71,6 +74,8 @@ main .presentacion h1 {
 }
 
 main .presentacion p {
+    width: 369px;
+    height: 153px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -78,17 +83,19 @@ main .presentacion p {
 }
 
 main .presentacion img {
-    width: 100%;
+    width: 359px;
+    height: 236px;
     border-radius: 10px;
 }
 
 main .habilidades {
     background: var(--white2);
-    padding-left: 48px;
+    padding: 48px;
     font-family: 'DM Sans', sans-serif;
 }
 
 main .habilidades h1 {
+    width: 383px;
     font-weight: 500;
     font-size: 52px;
     line-height: 28px;
@@ -96,10 +103,13 @@ main .habilidades h1 {
 }
 
 main .habilidades p {
+    width: 458px;
+    height: 153px;
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
     color: var(--secondary);
+    margin-bottom: 13px;
 }
 
 main .habilidades .atributo h2 {
@@ -109,6 +119,7 @@ main .habilidades .atributo h2 {
     font-size: 18px;
     line-height: 28px;
     color: var(--primary);
+    margin-bottom: 21px;
 }
 
 main .habilidades .atributo p {
@@ -118,9 +129,11 @@ main .habilidades .atributo p {
     font-size: 16px;
     line-height: 26px;
     color: var(--secondary);
+    margin-bottom: 79px;
 }
 
 main .experiencia {
+    margin-bottom: 80px;
     background: var(--white);
 }
 
@@ -131,6 +144,7 @@ main .experiencia .texto{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 87px 0;
 }
 
 main .experiencia .texto h1 {
@@ -142,6 +156,8 @@ main .experiencia .texto h1 {
 }
 
 main .experiencia .texto p {
+    width: 458px;
+    height: 154px;
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
@@ -166,17 +182,21 @@ main .experiencia .trabajo.dos,
 main .experiencia .trabajo.cuatro,
 main .experiencia .trabajo.cinco,
 main .experiencia .trabajo.seis {
-    /* display: none; */
+    display: none;
 }
 
 main .experiencia .trabajo {
-    padding-left: 32px;
+    text-align: start;
+    padding: 0 32px;
     font-family: 'DM Sans', sans-serif;
+    margin-bottom: 40px;
 }
 
 main .experiencia .trabajo img {
-    width: 100%;
+    height: 255px;
+    width: 509px;
     border-radius: 10px;
+    margin-bottom: 21px;
 }
 
 main .experiencia .trabajo h2 {
@@ -186,9 +206,12 @@ main .experiencia .trabajo h2 {
     font-size: 22px;
     line-height: 32px;
     color: var(--primary);
+    margin-bottom: 12px;
 }
 
 main .experiencia .trabajo p {
+    width: 505px;
+    height: 52px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -198,7 +221,7 @@ main .experiencia .trabajo p {
 main .informacion {
     font-family: 'DM Sans', sans-serif;
     background: var(--white2);
-    padding: 100px 0;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,6 +234,7 @@ main .informacion h3 {
     height: 70px;
     font-weight: 700;
     font-size: 22px;
+    margin-bottom: 40px;
     line-height: 40px;
     letter-spacing: -1px;
     color: var(--primary);
@@ -228,42 +252,4 @@ main .informacion .icons {
 
 main .informacion .icons img {
     width: 27px;
-}
-
-
-@media screen and (min-width: 600px) {
-
-    main .presentacion p {
-        width: 369px;
-        height: 153px;
-    }
-
-    main .presentacion img {
-        width: 359px;
-        height: 236px;
-    }
-    
-    main .habilidades h1 {
-        width: 383px;
-    }
-
-    main .habilidades p {
-        width: 458px;
-        height: 153px;
-    }
-
-    main .experiencia .texto p {
-        width: 458px;
-        height: 154px;
-    }
-
-    main .experiencia .trabajo img {
-        height: 255px;
-        width: 509px;
-    }
-
-    main .experiencia .trabajo p {
-        width: 505px;
-        height: 52px;
-    }
 }
