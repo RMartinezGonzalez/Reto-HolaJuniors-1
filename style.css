@@ -111,6 +111,7 @@ main .habilidades .atributo p {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    color: var(--secondary);
 }
 
 main .experiencia {
@@ -176,6 +177,7 @@ main .experiencia .trabajo h2 {
     font-weight: 500;
     font-size: 16px;
     padding: 9px 0;
+    color: var(--primary);
 }
 
 main .experiencia .trabajo p {
@@ -203,6 +205,7 @@ main .informacion h3 {
     line-height: 25px;
     color: var(--primary);
     padding-bottom: 25px;
+    letter-spacing: -1px;
 }
 
 main .informacion h3 a {
@@ -218,4 +221,149 @@ main .informacion .icons {
 
 main .informacion .icons img {
     width: 22px;
+}
+
+/* Tablets */
+@media screen and (min-width:600px) { 
+    /* :root {
+        --white2: #343434a;
+        --white: #141414a;
+        --primary: #fffaa;
+        --secondary: #f1f1f1a;
+        --tertiary:#00d9ffa;
+    } */
+
+    .header {
+        height: 94px;
+    }
+    
+    .header .logo {
+        font-size: 24px;
+    }
+    .header .email {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    main .presentacion {
+        padding: 100px 0 0 8%;
+    }
+    
+    main .presentacion h1 {
+        width: 422px;
+        height: 169px;
+        font-size:  43px;
+        line-height: 60px;
+        padding-bottom: 0;
+    }
+    
+    main .presentacion p {
+        width: 369px;
+        height: 153px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    main .presentacion img {
+        width: 67%;
+    }
+    
+    main .habilidades {
+        padding: 117px 0 100px 8%;
+    }
+    
+    main .habilidades h1 {
+        font-size: 52px;
+        padding-bottom: 15px;
+    }
+    
+    main .habilidades p {
+        width: 458px;
+        height: 153px;
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 13px;
+    }
+    
+    main .habilidades .atributo {
+        padding: 0 0 0 3.3%;
+    }
+    
+    main .habilidades .atributo h2 {
+        width: 215px;
+        font-size: 18px;
+        padding-bottom: 21px
+    }
+    
+    main .habilidades .atributo p {
+        width: 283px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    main .experiencia {
+        padding-top: 87px;
+    }
+    
+    main .experiencia .texto h1 {
+        width: 383px;
+        font-size: 52px;
+        padding-bottom: 10px;
+    }
+    
+    main .experiencia .texto p {
+        width: 458px;
+        height: 154px;
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 0;
+    }
+    
+    main .experiencia .texto .contacto {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    main .experiencia .trabajo.dos,
+    main .experiencia .trabajo.cuatro {
+        display: block;
+    }
+    
+    main .experiencia .trabajo {
+        padding: 0 0 80px 5.3%;
+    }
+    
+    main .experiencia .trabajo h2 {
+        font-size: 22px;
+        padding: 12px 0;
+    }
+    
+    main .experiencia .trabajo p {
+        width: 505px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 40px;
+    }
+    
+    main .informacion {
+        padding: 100px 0;
+    }
+    
+    main .informacion h3 {
+        font-size: 22px;
+        line-height: 35px;
+        padding-bottom: 40px;
+    }
+    
+    main .informacion .icons {
+        width: 35%;
+    }
+    
+    main .informacion .icons img {
+        width: 30px;
+    }
 }
