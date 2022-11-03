@@ -223,6 +223,12 @@ main .informacion .icons img {
     width: 22px;
 }
 
+/* icons looks small */
+@media screen and (min-width:400px) {
+    main .informacion .icons img {
+        width: 24px;
+    }
+}
 /* Tablets */
 @media screen and (min-width:600px) { 
     /* :root {
