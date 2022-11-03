@@ -17,163 +17,141 @@
 }
 
 body {
-    width: 600px
+    font-family: 'DM Sans', sans-serif;
 }
 
 .header {
-    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 30px 7%; */
-    margin: 0 30px;
-    background: var(--white);
-    height: 90px;
+    padding: 30px;
 }
 
 .header .logo {
-    width: 190px;
-    height: 32px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-    text-align: center;
-    letter-spacing: -0.29;
+    font-size: 18px;
+    letter-spacing: -0.3;
     color: var(--primary);
 }
-
 .header .email {
-    width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 67.5px;
+    height: 27px;
     border: 2px solid var(--gray-border);
     border-radius: 100px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
     background: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
     color: var(--primary);
-    cursor: pointer;
 }
 
 main .presentacion {
     background: var(--white2);
-    padding: 48px;
-    font-family: 'DM Sans', sans-serif;
+    padding: 67px 0 0 8%;
 }
 
 main .presentacion h1 {
-    width: 422px;
-    height: 169px;
-    font-weight: 700px;
-    font-size: 43px;
-    line-height: 60px;
+    font-weight: 700;
+    font-size:  29px;
+    line-height: 39px;
+    padding-bottom: 36px;
     color: var(--primary);
 }
 
 main .presentacion p {
-    width: 369px;
-    height: 153px;
+    width: 70%;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 14.5px;
+    line-height: 18px;
+    padding-bottom: 33px;
     color: var(--secondary);
 }
 
 main .presentacion img {
-    width: 359px;
-    height: 236px;
+    width: 78%;
     border-radius: 10px;
 }
 
 main .habilidades {
     background: var(--white2);
-    padding: 48px;
-    font-family: 'DM Sans', sans-serif;
+    padding: 76px 0 54px 8%;
 }
 
 main .habilidades h1 {
-    width: 383px;
     font-weight: 500;
-    font-size: 52px;
-    line-height: 28px;
+    font-size: 35px;
+    padding-bottom: 10px;
     color: var(--primary);
 }
 
 main .habilidades p {
-    width: 458px;
-    height: 153px;
+    width: 86%;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 14.5px;
+    line-height: 21px;
+    padding-bottom: 45px;
     color: var(--secondary);
-    margin-bottom: 13px;
+}
+
+main .habilidades .atributo {
+    padding: 7px 0 0 3.3%;
 }
 
 main .habilidades .atributo h2 {
-    width: 215px;
-    height: 28px;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 13px;
     color: var(--primary);
-    margin-bottom: 21px;
+    padding-bottom: 15px;
 }
 
 main .habilidades .atributo p {
-    width: 283px;
-    height: 78px;
+    width: 61%;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--secondary);
-    margin-bottom: 79px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 main .experiencia {
-    margin-bottom: 80px;
     background: var(--white);
+    padding-top: 59px;
 }
 
-main .experiencia .texto{
-    font-family: 'DM Sans', sans-serif;
+main .experiencia .texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 87px 0;
+    padding-bottom: 60px;
 }
 
 main .experiencia .texto h1 {
-    width: 383px;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 28px;
+    font-weight: 500;
+    font-size: 37px;
+    padding-bottom: 8px;
     color: var(--primary);
 }
 
 main .experiencia .texto p {
-    width: 458px;
-    height: 154px;
+    width: 74%;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 21px;
+    padding-bottom: 20px;
     color: var(--secondary);
 }
 
 main .experiencia .texto .contacto {
-    width: 200px;
-    height: 50px;
+    width: 136px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--aqua-button);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 12px;
     color: var(--white);
     border-radius: 100px;
 }
@@ -186,58 +164,45 @@ main .experiencia .trabajo.seis {
 }
 
 main .experiencia .trabajo {
-    text-align: start;
-    padding: 0 32px;
-    font-family: 'DM Sans', sans-serif;
-    margin-bottom: 40px;
+    padding: 0 0 28px 5.3%;
 }
 
 main .experiencia .trabajo img {
-    height: 255px;
-    width: 509px;
+    width: 90%;
     border-radius: 10px;
-    margin-bottom: 21px;
 }
 
 main .experiencia .trabajo h2 {
-    width: 509px;
-    height: 32px;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    color: var(--primary);
-    margin-bottom: 12px;
+    font-size: 16px;
+    padding: 9px 0;
 }
 
 main .experiencia .trabajo p {
-    width: 505px;
-    height: 52px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    width: 85%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 17px;
     color: var(--secondary);
+    padding-bottom: 30px;
 }
 
 main .informacion {
-    font-family: 'DM Sans', sans-serif;
     background: var(--white2);
-    padding: 100px;
+    padding: 60px 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 main .informacion h3 {
-    width: 277px;
-    height: 70px;
     font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 40px;
-    line-height: 40px;
-    letter-spacing: -1px;
+    font-size: 15px;
+    line-height: 25px;
     color: var(--primary);
+    padding-bottom: 25px;
 }
 
 main .informacion h3 a {
@@ -245,11 +210,12 @@ main .informacion h3 a {
 }
 
 main .informacion .icons {
-    width: 250px;
+    width: 45%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main .informacion .icons img {
-    width: 27px;
+    width: 22px;
 }
