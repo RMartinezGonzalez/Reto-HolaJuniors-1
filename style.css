@@ -383,8 +383,8 @@ main .informacion .icons img {
     }
     
     main .presentacion img {
-        width: 40.7%;
-        height: 451px;
+        width: 35%;
+        height: 300px;
         margin-right: 9%;
     }
     
@@ -471,38 +471,28 @@ main .informacion .icons img {
     }
     
     main .experiencia .container {
-        width: 89%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         
     }
 
-    main .experiencia .trabajo {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0 0 70px 0;
+    main .experiencia .trabajo.dos,
+    main .experiencia .trabajo.cinco {
+        margin: 0 20px;
     }
-    
-    main .experiencia .trabajo h2 {
-        width: 370px;
-        height: 32px;
-        font-size: 19px;
-        padding: 0;
-        margin: 20px 0 10px 0;
+
+    main .experiencia .trabajo {
+        padding: 0 0 0 0;
+        width: 269px;
+    }
+
+    main .experiencia .trabajo img {
+        width: 100%;
     }
     
     main .experiencia .trabajo p {
-        width: 245px;
-        height: 52px;
-        font-weight: 400;
-        font-size: 14px;
-        padding-bottom: 0;
+        width: 100%;
     }
     
     main .informacion {
@@ -525,23 +515,46 @@ main .informacion .icons img {
 }
 
 @media screen and (min-width:1133px) {
-    
-    main .habilidades .atributo p {
-        width: 283px;
-        height: 78px;
+    main .presentacion img {
+        width: 45%;
+        height: 400px;
     }
 
-    main .experiencia .container {
-        width: auto;
+    main .habilidades .atributo p {
+        width: 283px;
+    }
+
+    main .experiencia .trabajo.dos,
+    main .experiencia .trabajo.cinco {
+        margin: 0 30px;
+    }
+
+    main .experiencia .trabajo {
+        width: 331px;
     }
 
     main .experiencia .trabajo h2 {
-        font-size: 22px;
+        padding: 0;
+        margin: 20px 0 10px 0;
     }
 
     main .experiencia .trabajo p {
         width: 367px;
         height: 52px;
-        font-size: 16px;
+        padding: 0;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:1260px) {
+    main .presentacion img {
+        width: 580px;
+        height: 451px;
+    }
+}
+
+@media screen and (min-width:1401px) {
+    main .experiencia .trabajo {
+        width: 25%;
     }
 }
