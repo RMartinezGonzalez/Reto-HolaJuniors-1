@@ -47,6 +47,12 @@ body {
     color: var(--primary);
 }
 
+.header .email:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
 main .presentacion {
     background: var(--white2);
     padding: 67px 0 0 8%;
@@ -157,6 +163,11 @@ main .experiencia .texto .contacto {
     border-radius: 100px;
 }
 
+main .experiencia .texto .contacto:hover {
+    font-weight: 700;
+    background: var(--primary);
+}
+
 main .experiencia .trabajo.dos,
 main .experiencia .trabajo.cuatro,
 main .experiencia .trabajo.cinco,
@@ -210,6 +221,10 @@ main .informacion h3 {
 
 main .informacion h3 a {
     color: var(--tertiary);
+}
+
+main .informacion h3 a:hover {
+    text-decoration: underline;
 }
 
 main .informacion .icons {
@@ -367,8 +382,13 @@ main .informacion .icons img {
     main .informacion .icons img {
         width: 30px;
     }
+
+    main .informacion .icons img:hover {
+        padding: 2px;
+    }
 }
 
+/* Big tablets */
 @media screen and (min-width:900px) {
     .header {
         height: 100px;
@@ -514,6 +534,7 @@ main .informacion .icons img {
     }
 }
 
+/* Desktop */
 @media screen and (min-width:1133px) {
     main .presentacion img {
         width: 45%;
@@ -553,6 +574,7 @@ main .informacion .icons img {
     }
 }
 
+/* Big desktop */
 @media screen and (min-width:1401px) {
     main .experiencia .trabajo {
         width: 25%;
