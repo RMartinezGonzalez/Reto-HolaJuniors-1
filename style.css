@@ -2,11 +2,11 @@
     --primary:#1E0E62;
     --secondary:#15143966;
     --tertiary:#482BE7;
-    --white:#FFF;
-    --white2:#F1F1F1;
-    --gray-border:#EBEAED;
-    --gray-logo:#9999a7;
-    --aqua-button:#25DAC5;
+    --background:#FFF;
+    --background2:#F1F1F1;
+    --button-border:#EBEAED;
+    --icons:#9999a7;
+    --contact-button:#25DAC5;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-    background: var(--white);
+    background: var(--background);
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -34,12 +34,17 @@ body {
     font-size: 18px;
     color: var(--primary);
 }
+
+.header .logo:hover {
+    text-decoration: overline;
+}
+
 .header .email {
     width: 67.5px;
     height: 27px;
-    border: 2px solid var(--gray-border);
+    border: 2px solid var(--button-border);
     border-radius: 100px;
-    background: var(--white);
+    background: var(--background);
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 11px;
@@ -50,11 +55,11 @@ body {
 .header .email:hover {
     background: var(--primary);
     border-color: var(--primary);
-    color: var(--white);
+    color: var(--background);
 }
 
 main .presentacion {
-    background: var(--white2);
+    background: var(--background2);
     padding: 67px 0 0 8%;
 }
 
@@ -73,6 +78,7 @@ main .presentacion p {
     line-height: 18px;
     padding-bottom: 33px;
     color: var(--secondary);
+    text-align: justify;
 }
 
 main .presentacion img {
@@ -81,7 +87,7 @@ main .presentacion img {
 }
 
 main .habilidades {
-    background: var(--white2);
+    background: var(--background2);
     padding: 76px 0 54px 8%;
 }
 
@@ -121,7 +127,7 @@ main .habilidades .atributo p {
 }
 
 main .experiencia {
-    background: var(--white);
+    background: var(--background);
     padding: 59px 0 28px 0;
 }
 
@@ -156,10 +162,10 @@ main .experiencia .texto .contacto {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--aqua-button);
+    background: var(--contact-button);
     font-weight: 500;
     font-size: 12px;
-    color: var(--white);
+    color: var(--background);
     border-radius: 100px;
 }
 
@@ -168,8 +174,6 @@ main .experiencia .texto .contacto:hover {
     background: var(--primary);
 }
 
-main .experiencia .trabajo.dos,
-main .experiencia .trabajo.cuatro,
 main .experiencia .trabajo.cinco,
 main .experiencia .trabajo.seis {
     display: none;
@@ -191,6 +195,11 @@ main .experiencia .trabajo h2 {
     color: var(--primary);
 }
 
+main .experiencia .trabajo h2:hover {
+    color: var(--contact-button);
+    text-decoration: overline;
+}
+
 main .experiencia .trabajo p {
     width: 85%;
     font-weight: 500;
@@ -201,7 +210,7 @@ main .experiencia .trabajo p {
 }
 
 main .informacion {
-    background: var(--white2);
+    background: var(--background2);
     padding: 60px 0;
     text-align: center;
     display: flex;
@@ -247,8 +256,8 @@ main .informacion .icons img {
 /* Tablets */
 @media screen and (min-width:600px) { 
     /* :root {
-        --white2: #343434a;
-        --white: #141414a;
+        --background2: #343434a;
+        --background: #141414a;
         --primary: #fffaa;
         --secondary: #f1f1f1a;
         --tertiary:#00d9ffa;
@@ -281,10 +290,11 @@ main .informacion .icons img {
     
     main .presentacion p {
         width: 369px;
-        height: 153px;
         font-size: 22px;
         line-height: 26px;
+        margin-bottom: 53px;
     }
+
     
     main .presentacion img {
         width: 67%;
@@ -560,7 +570,7 @@ main .informacion .icons img {
     }
 
     main .experiencia .trabajo p {
-        width: 367px;
+        width: 325px;
         height: 52px;
         padding: 0;
         margin-bottom: 70px;
@@ -578,5 +588,15 @@ main .informacion .icons img {
 @media screen and (min-width:1401px) {
     main .experiencia .trabajo {
         width: 25%;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    main .presentacion {
+        justify-content: center;
+    }
+
+    main .presentacion .texto {
+        padding-right: 10%;
     }
 }
